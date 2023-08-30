@@ -1,4 +1,4 @@
-import sheety
+import userUpdater
 
 print("Welcome to Efe's Flight Club.\n \
 We find the best flight deals and email them to you.")
@@ -18,4 +18,4 @@ while email1 != email2:
 
 print("OK. You're in the club!")
 
-sheety.post_new_row(first_name, last_name, email1)
+userUpdater.post_new_row(first_name, last_name, email1)
