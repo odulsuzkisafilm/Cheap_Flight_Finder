@@ -12,7 +12,7 @@ This script helps you track and notify about the lowest flight prices for variou
   - Sheety API: For accessing destination data.
   - SMTP server details: For sending email notifications.
 4. Create a google sheets document with sheets named "prices" and "users".
-  - Arrange the prices sheet such that it contains the columns: "City", "IATA Code" and "Lowest Price". Add the cities you wish to visit. IATA Codes will be automatically filled.    - Initialize the Lowest Price columns.
+  - Arrange the prices sheet such that it contains the columns: "City", "IATA Code" and "Lowest Price". Add the cities you wish to visit. IATA Codes will be automatically filled. Initialize the Lowest Price columns.
   - Add the users who will be notified, via running `signUp.py`
 5. Update the environment variables using the API keys and urls obtained in step 3.
 
