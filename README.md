@@ -29,6 +29,6 @@ The script will fetch destination data, check flight prices, and notify you if t
 The script will iterate through the destination data, checking flight prices for each destination. If a flight with a lower price than the previously recorded lowest price is found, you will receive an SMS and an email notification.
 The destination data will be updated with the new lowest prices.
 
-##Important Note
+## Important Note
 
 Make sure to keep your API keys, credentials, and other sensitive information secure and private. You can use environment variables or a configuration file to manage these values securely.
