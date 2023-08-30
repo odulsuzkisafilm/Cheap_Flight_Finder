@@ -1,6 +1,6 @@
 import smtplib
 from twilio.rest import Client
-import sheety
+import userUpdater
 import requests
 import os
 
@@ -18,11 +18,11 @@ class NotificationManager:
     def __init__(self):
         self.client = Client(TWILIO_SID, TWILIO_AUTH_TOKEN)
 
-        endpoint_url = f"/{sheety.SHEETY_USERNAME}/{sheety.PROJECT}/{sheety.SHEET}"
-        url = sheety.base_url + endpoint_url
-        response = requests.get(url=url, auth=sheety.BASIC_AUTH_PARAMS)
+        endpoint_url = f"/{userUpdater.SHEETY_USERNAME}/{userUpdater.PROJECT}/{userUpdater.SHEET}"
+        url = userUpdater.base_url + endpoint_url
+        response = requests.get(url=url, auth=userUpdater.BASIC_AUTH_PARAMS)
         data = response.json()
-        self.user_data = data[sheety.SHEET]
+        self.user_data = data[userUpdater.SHEET]
 
     def send_sms(self, message):
         message = self.client.messages.create(
